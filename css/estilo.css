@@ -1,0 +1,457 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	box-sizing: border-box;	
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@1,600&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+	
+
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"Uno"
+	"Dos"
+	"Tres";
+	
+}
+.nav_logo {
+	display: flex;
+}
+#header{  
+	display: flex;
+	height: 100px;
+	background-color: #ef9fe54a;
+	border-radius: 0 0 50px 50px;
+	min-width: 314px;
+	justify-content: space-evenly;
+	grid-area: Uno;
+}
+
+
+.bars {
+	display: none ;
+}
+
+.nav_logo img{
+	width: 80px;
+	height: 80px;
+	display: flex;
+	border-radius: 50%;
+	margin: 10px 20px;
+
+}
+.nav_li{
+	padding: 0 30px ;
+	margin: auto;
+}
+.nav_list{
+	display: flex;
+
+}
+
+.nav_ul {
+	display: flex;  
+	flex-wrap: wrap; 
+	flex-grow: 1;
+    list-style: none;
+   
+}
+.nav_ul li{
+	 transition-duration: 0.5s;
+}
+
+
+
+.nav_ul li a{
+	color: #c0b9b9;
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+
+
+
+.nav_li-active{
+	margin: auto
+}
+.nav_ul .nav_li-active a{
+	color: #ccc;
+	font-size: 25px;
+	text-decoration: none;
+	
+ 
+
+}
+/*MAIN INDEX*/
+.main_container{
+	min-width: 314px;
+	grid-area: Dos;
+}
+
+.main_img img{
+	width: 100vh;
+	height: 600px;
+	margin-top: 100px;	
+}
+
+.bannerPrincipal{
+	display: flex;
+	height: 100vh;
+	background-image: url(../fotos/visiting.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px 50px 50px 50px;
+
+}
+.bannerPrincipal p{
+	font-size: 1rem;
+	color: #fff;
+	margin: auto;
+	font-family: 'Quicksand', sans-serif;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20%;
+}
+
+.profesional_widget{
+	list-style: none; 
+	height: 1000px;
+}
+
+.profesional_widget li{
+	margin: auto;
+}
+ 
+
+.glass{
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	height: 40px;
+	background-color:rgba(255 ,255, 255, .05) ;
+	border-radius: 5px;
+	backdrop-filter: blur(5px);
+	border: 2px solid transparent;
+	background-clip: padding-box;
+	box-shadow: 10px 10px 10px rgba(45,55,60, .3);
+	line-height: 1.5;
+		
+}
+
+
+.glass p{
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+/*INDEX SERVICIO*/
+.p_container{
+	display: flex;
+}
+
+.p_container .sub_title_main{
+	text-align: center;
+	margin: auto;
+	padding-top: 25px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 28px;
+
+}
+.d_p p{
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	padding: 20px;
+}
+.d_p p a{
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+.d_p{
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	padding: 20px;
+	list-style: none;
+}
+
+
+.profesional_widget{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-items: center;
+
+}
+
+
+.service_container .profesional_widget li img{
+	width: 200px;
+	height: 200px;
+	transition-duration: 0.5s;
+}
+
+
+ .contactanos{
+ 	background-color: aquamarine;
+}
+/*FOOTER*/
+
+.footer{
+	grid-area: Tres;
+	background-color: #ef9fe54a;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: -10px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+} 
+ 
+ .terms .logo img {
+ 	width: 100px;
+ 	border-radius: 50%;
+ }
+
+
+/*Pagina - SOBRE NOSOTROS*/
+
+.sobre_nosotros_container{
+	grid-area: Dos;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: auto;
+
+}
+
+.Dr{
+	display: flex;
+
+}
+.Dr p{
+	margin: auto;
+	font-size: 25px;
+	box-shadow: 10px 5px 10px 1px;
+
+}
+
+.aside{
+	display: grid;
+	margin: auto;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	justify-items: center;
+	align-items: center;
+}
+
+
+div .partnerContainerImg img{
+	border-radius: 50%;
+	width: 400px;
+	object-fit: contain;
+
+}
+.partnerContainer{
+	display: inline-block;
+}
+
+
+
+/*Pagina - tratamientos*/
+.tratamiento_container{
+	grid-area: Dos;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.tratamiento_container ul{
+	list-style: none;
+}
+
+/*Pagina - promociones*/
+.promociones_container{
+	grid-area: Dos;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	
+}
+.promo{
+	margin: auto;
+}
+
+.proximamente img {
+	border-radius: 50%;
+	border: 1px solid #000;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 15px 20px 1px;	
+}
+
+.mercadopago{
+	width: 50px;
+}
+/*Pagina - contacto*/
+.formulario{
+	min-width: 314px;
+	grid-area: Dos;
+}
+
+div .checkBoxContainer{
+	margin-top: 100px;
+	padding: 0;
+}
+
+input{
+font-family: 'Quicksand', sans-serif;
+text-align: center;
+}
+
+.ubicacion_maps{
+	display: flex;
+	min-width: 314px;
+
+	
+}
+.ubicacion_maps iframe{
+	flex-grow: 1;
+}
+
+
+@media only screen and (max-width: 841px)
+	{
+		#header{
+			justify-content: flex-start;
+		}
+		.nav_logo{
+			width: 100vw;
+			min-width: 314px;
+			flex-grow: 1;
+		}
+
+		.nav_ul {
+			display: none;
+		}
+
+		.bannerPrincipal p{
+			font-size: 15px;
+		}
+
+		p
+		{
+		font-size: 10px;
+		}
+
+		.bars{
+			display: flex;
+			align-items: center;
+			width: 100%;
+			margin-right: 40px;
+			font-size: 25px;
+			;
+		}
+
+		.nav_logo .bars{
+			justify-content: flex-end;
+		}
+
+		.footer li , .footer ul{
+			font-size: 15px;
+
+		}
+
+		.aside{
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+		}
+		.Dr p{
+		margin: auto;
+		font-size: 15px;
+}
+
+	}
+
+@media only screen and (max-width: 452px){
+	.bannerPrincipal p{
+		font-size: 10px;
+	}
+	.service_container .profesional_widget li img{
+		width: 150px;
+		height: 150px;
+	}
+	.footer li , .footer ul{
+		font-size: 12px;
+		}
+	}
