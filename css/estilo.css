@@ -1,25 +1,21 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', sans-serif ; 
 	box-sizing: border-box;	
 }
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@1,600&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-	
-
-
-.container{
-	display: grid;
-	grid-template-columns: 1fr ;
-	grid-template-rows: 1fr;
-	grid-template-areas: 
-	"Uno"
-	"Dos"
-	"Tres";
-	
+body{
+	overflow-x: hidden;
 }
+
+nav{
+	background-color: #ef9fe54a;
+	border-radius: 0 0 50px 50px;
+}
+
 .nav_logo {
 	display: flex;
 }
@@ -31,6 +27,21 @@
 	min-width: 314px;
 	justify-content: space-evenly;
 	grid-area: Uno;
+}
+
+.nav-item{
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+	z-index: 100;
+}
+.nav-item:hover{
+	background-color: #ee72de4a;
+	border-radius: 50px 50px 50px 50px;
+
+}
+
+.text-style{
+font-family: 'Nunito', sans-serif ; 
 }
 
 
@@ -79,10 +90,8 @@
 .nav_ul li a{
 	color: #c0b9b9;
 	font-size: 20px;
-	text-decoration: none;
-	
+	text-decoration: none;	
 }
-
 
 
 .nav_li-active{
@@ -92,9 +101,11 @@
 	color: #ccc;
 	font-size: 25px;
 	text-decoration: none;
-	
- 
+}
 
+
+.servicio_image-container img{
+	border-radius: 50%;
 }
 /*MAIN INDEX*/
 .main_container{
@@ -108,17 +119,19 @@
 	margin-top: 100px;	
 }
 
+.carousel-inner{
+	border-radius: 50px 50px 50px 50px;
+}
+
 .bannerPrincipal{
 	display: flex;
-	height: 100vh;
-	background-image: url(../fotos/visiting.jpg);
 	background-size: cover;
 	background-position: center;
 	border-radius: 50px 50px 50px 50px;
 
 }
 .bannerPrincipal p{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: #fff;
 	margin: auto;
 	font-family: 'Quicksand', sans-serif;
@@ -134,47 +147,28 @@
 	height: 1000px;
 }
 
-.profesional_widget li{
-	margin: auto;
-}
+
  
 
-.glass{
+.glass {
 	display: flex;
 	justify-content: center;
 	width: 300px;
-	height: 40px;
+		
 	background-color:rgba(255 ,255, 255, .05) ;
 	border-radius: 5px;
 	backdrop-filter: blur(5px);
 	border: 2px solid transparent;
 	background-clip: padding-box;
 	box-shadow: 10px 10px 10px rgba(45,55,60, .3);
-	line-height: 1.5;	
-	position: relative;
-	animation-iteration-count: infinite;
-	animation-duration: 10s;
-	animation-name: mover;
-	animation-timing-function: linear;	
-}
-@keyframes mover{
-	0%{
-		top: 0px;
-	}
-	50%{
-		top: 40px;
-	}
-	100%{
-		top: 0;
-	}
-
+	
 }
 
 
 .glass p{
 	font-size: 16px;
-	margin-bottom: 10px;
-	color: #fff;
+	
+	color: #000;
 }
 /*INDEX SERVICIO*/
 .p_container{
@@ -207,15 +201,10 @@
 }
 
 
-.profesional_widget{
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	justify-items: center;
 
+.service_container{
+		margin: auto;
 }
-
-
 .service_container .profesional_widget li img{
 	width: 200px;
 	height: 200px;
@@ -228,6 +217,9 @@
 .contactanos{
 		background: linear-gradient(to bottom, #2ef2f2 0%,#89ffed 100%);
 
+}
+.section-title{
+margin-bottom: 100px;
 }
 /*FOOTER*/
 
@@ -308,6 +300,10 @@
  	border-radius: 50%;
  }
 
+.boton_compra{
+	background-color: #161616;
+    text-align: center;
+}
 
 /*Pagina - SOBRE NOSOTROS*/
 
@@ -390,10 +386,8 @@ div .partnerContainerImg img{
 	width: 50px;
 }
 /*Pagina - contacto*/
-.formulario{
-	min-width: 314px;
-	grid-area: Dos;
-}
+
+
 
 div .checkBoxContainer{
 	margin-top: 100px;
@@ -404,7 +398,7 @@ div .checkBoxContainer{
 	margin: 20px ;
 }
 .input-container input{
-	width:250px;
+	width: 500px;
 	border-radius: 100px;
 	border: 1px solid #dfe1e5;
 	padding: 12px;
@@ -486,9 +480,11 @@ text-align: center;
 		.Dr p{
 		margin: auto;
 		font-size: 15px;
-}
-
 	}
+.input-container input{
+	width: 250px;
+	}
+}
 
 @media only screen and (max-width: 452px){
 	.bannerPrincipal p{
@@ -501,4 +497,10 @@ text-align: center;
 	.footer li , .footer ul{
 		font-size: 12px;
 		}
+
+	.nav_logo img{
+		margin: 0 0;
 	}
+	}
+
+
