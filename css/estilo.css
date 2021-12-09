@@ -387,7 +387,9 @@ div .partnerContainerImg img{
 }
 /*Pagina - contacto*/
 
-
+.form-contact{
+	align-items: ;
+}
 
 div .checkBoxContainer{
 	margin-top: 100px;
@@ -398,7 +400,7 @@ div .checkBoxContainer{
 	margin: 20px ;
 }
 .input-container input{
-	width: 500px;
+	width: 100%;
 	border-radius: 100px;
 	border: 1px solid #dfe1e5;
 	padding: 12px;
