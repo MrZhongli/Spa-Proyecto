@@ -1,0 +1,18 @@
+// @mixin ejemplo($fontSize,$colorPrincipal:#fffo se lo puedo dar como parametro){
+// 	color: $colorPrincipal;
+// 	font-size: $fontSize;
+// }
+
+
+/*bucles*/
+#unProducto	
+.row{
+	display: flex;
+	flex-direction: row
+	flex-wrap: flex-wrap;
+	@for $i from 1 through 12{
+		.col-#$(i){
+			width: (100%/12)* $i;
+		}
+ 	}
+}
