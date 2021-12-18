@@ -1,4 +1,14 @@
+/*bucles*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat+Alternates:ital,wght@0,100;0,200;1,200&family=Montserrat:ital,wght@1,600&family=Nunito:ital,wght@0,300;1,200&family=Quicksand:wght@300;400;600&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;1,500&family=Sacramento&display=swap");
+.font-weight-light {
+  font-weight: 300; }
+
+.font-weight-normal {
+  font-weight: 400; }
+
+.font-weight-bold {
+  font-weight: 700; }
+
 /*CSS rules to specify families
 
 font-family: 'Dancing Script', cursive;
@@ -34,6 +44,9 @@ font-family: 'Sacramento', cursive;
 .myTitles div div p, .myTitles div div h5 {
   font-family: 'Dancing Script', cursive; }
 
+.logoName {
+  margin-right: 70px; }
+
 .myTitles {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
@@ -60,7 +73,7 @@ nav {
   transition-duration: 0.5s;
   z-index: 100; }
   .nav-item:hover {
-    background-color: #ee72de4a;
+    background-color: #ef9fe54a;
     border-radius: 50px 50px 50px 50px; }
 
 .nav_logo img {
@@ -75,10 +88,11 @@ nav {
 
 /*MAIN INDEX*/
 .p_container > p {
-  margin-top: 100px; }
+  font-size: 1.7rem;
+  margin-top: 200px; }
   @media all and (max-width: 768px) {
     .p_container > p {
-      font-size: 1.1rem; } }
+      font-size: 1.5rem; } }
 
 .main_img img {
   width: 100vh;
@@ -103,6 +117,12 @@ nav {
     justify-content: center;
     align-items: center;
     height: 20%; }
+    @media only screen and (max-width: 768px) {
+      .bannerPrincipal p {
+        font-size: 15px; } }
+    @media only screen and (max-width: 576px) {
+      .bannerPrincipal p .bannerPrincipal p {
+        font-size: 10px; } }
 
 .profesional_widget {
   margin-bottom: 100px; }
@@ -124,17 +144,25 @@ nav {
 .product_item:nth-child(even) {
   background-color: #d9d9d9; }
 
-.letraBase {
-  font-family: 'Quicksand', sans-serif;
+.letraBase, .letraBase p {
+  font-size: 1.2rem;
+  font-weight: 400;
   text-align: center;
-  padding: 20px;
-  list-style: none; }
-  .letraBase p {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    padding: 20px; }
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  list-style: none;
+  text-decoration: none; }
+  @media all and (max-width: 768px) {
+    .letraBase p {
+      font-size: 1rem; } }
+  @media all and (max-width: 576px) {
+    .letraBase p {
+      font-size: .9rem; } }
   .letraBase p a {
     font-family: 'Quicksand', sans-serif; }
+    @media all and (max-width: 768px) {
+      .letraBase p a {
+        font-size: 1rem; } }
 
 .service_container .profesional_widget li img {
   width: 200px;
@@ -142,6 +170,10 @@ nav {
   transition-duration: 0.5s; }
   .service_container .profesional_widget li img:hover {
     transform: scale(1.1); }
+  @media only screen and (max-width: 576px) {
+    .service_container .profesional_widget li img .service_container .profesional_widget li img {
+      width: 150px;
+      height: 150px; } }
 
 .contactanos {
   background: linear-gradient(90deg, #2ef2f2 10%, #89ffed 100%); }
@@ -211,7 +243,6 @@ nav {
 
 /*Pagina - SOBRE NOSOTROS*/
 .sobre_nosotros_container {
-  grid-area: Dos;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -223,6 +254,10 @@ nav {
     margin: auto;
     font-size: 25px;
     box-shadow: 10px 5px 10px 1px; }
+  @media only screen and (max-width: 768px) {
+    .Dr {
+      margin: auto;
+      font-size: 15px; } }
 
 .aside {
   display: grid;
@@ -231,64 +266,64 @@ nav {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   justify-items: center;
-  align-items: center; }
-
-.partnerContainerImg img {
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-  object-fit: contain; }
-
-.partnerContainer {
-  display: inline-block; }
-
-/*Pagina - tratamientos*/
-.tratamiento_container {
-  grid-area: Dos;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto; }
-  .tratamiento_container ul {
-    list-style: none; }
-
-/*Pagina - promociones*/
-.promociones_container {
-  display: flex;
-  flex-direction: column;
-  margin: auto; }
-  .promociones_container .promo {
+  align-items: center;
+  /*Pagina - tratamientos*/
+  /*Pagina - promociones*/
+  /*Pagina - contacto*/ }
+  @media only screen and (max-width: 768px) {
+    .aside .aside {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto; } }
+  .aside .partnerContainerImg img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: contain; }
+  .aside .partnerContainer {
+    display: inline-block; }
+  .aside .tratamiento_container {
+    grid-area: Dos;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto; }
-
-.proximamente img {
-  border-radius: 50%;
-  border: 1px solid #000;
-  width: 200px;
-  height: 200px;
-  box-shadow: 0 15px 20px 1px; }
-
-.mercadopago {
-  width: 50px; }
-
-/*Pagina - contacto*/
-.form-contact {
-  flex-grow: 1; }
-
-div .checkBoxContainer {
-  margin-top: 100px;
-  padding: 0; }
-
-.input-container input {
-  width: 100%;
-  border-radius: 100px;
-  border: 1px solid #dfe1e5;
-  padding: 12px;
-  outline: none;
-  transition-duration: 0.3s; }
-  .input-container input:hover {
-    box-shadow: 0 1px 6px 0 #20214447; }
-  .input-container input:focus {
-    box-shadow: 0 1px 6px 0 #20214447;
-    transform: scale(1.05); }
+    .aside .tratamiento_container ul {
+      list-style: none; }
+  .aside .promociones_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+    .aside .promociones_container .promo {
+      margin: auto; }
+  .aside .proximamente img {
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 15px 20px 1px; }
+  .aside .mercadopago {
+    width: 50px; }
+  .aside .form-contact {
+    flex-grow: 1; }
+  .aside div .checkBoxContainer {
+    margin-top: 100px;
+    padding: 0; }
+  .aside .input-container input {
+    width: 100%;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    padding: 12px;
+    outline: none;
+    border-radius: 50px 50px 50px 50px;
+    transition-duration: 0.3s; }
+    .aside .input-container input:hover {
+      box-shadow: 0 1px 6px 0 #20214447; }
+    .aside .input-container input:focus {
+      box-shadow: 0 1px 6px 0 #20214447;
+      transform: scale(1.05); }
+    @media only screen and (max-width: 768px) {
+      .aside .input-container input .input-container input {
+        width: 250px; } }
 
 .form-contact form div input {
   font-family: 'Quicksand', sans-serif;
@@ -299,27 +334,3 @@ div .checkBoxContainer {
   min-width: 314px; }
   .ubicacion_maps iframe {
     flex-grow: 1; }
-
-@media only screen and (max-width: 768px) {
-  .bannerPrincipal p {
-    font-size: 15px; }
-  p {
-    font-size: 10px; }
-  .aside {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto; }
-  .Dr p {
-    margin: auto;
-    font-size: 15px; }
-  .input-container input {
-    width: 250px; } }
-
-@media only screen and (max-width: 452px) {
-  .bannerPrincipal p {
-    font-size: 10px; }
-  .service_container .profesional_widget li img {
-    width: 150px;
-    height: 150px; }
-  .footer li, .footer ul {
-    font-size: 12px; } }

@@ -1,8 +1,12 @@
 $point-md: 768px;
+$point-sm:576px;
 
 $mainColor: #000;
 
-$bgColor: #ee72de4a;
+$bgColor: #ef9fe54a;
 
-$miMap:(light:300 , normal: 400, bold: 700);
+$miWeight:(
+	light:300 ,
+	normal: 400, 
+	bold: 700);
 

@@ -31,3 +31,6 @@ logs
 
 *.zip
 *.sql
+
+node_modules
+

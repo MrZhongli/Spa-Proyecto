@@ -5,14 +5,46 @@
 
 
 /*bucles*/
-#unProducto	
-.row{
-	display: flex;
-	flex-direction: row
-	flex-wrap: flex-wrap;
-	@for $i from 1 through 12{
-		.col-#$(i){
-			width: (100%/12)* $i;
-		}
- 	}
+// #unProducto	
+// .row{
+// 	display: flex;
+// 	flex-direction: row
+// 	flex-wrap: flex-wrap;
+// 	@for $i from 1 through 12{
+// 		.col-#$(i){
+// 			width: (100%/12)* $i;
+// 		}
+//  	}
+// }
+
+
+
+
+
+@each $k, $v in $miWeight {
+	.font-weight-#{$k}{
+		font-weight:$v;
+	}
+	 
+}
+
+@mixin textoNormal($fontSize){
+	font-size: $fontSize;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Quicksand', sans-serif;
+	 list-style: none;
+	 text-decoration: none;
+
+}
+
+@mixin textoNav($fontSize){
+	font-size: $fontSize;
+	font-weight: 700;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Quicksand', sans-serif;
+	 list-style: none;
+	 text-decoration: none;
 }
