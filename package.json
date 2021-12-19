@@ -1,7 +1,6 @@
 {
   "name": "proyecto",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/MrZhongli/Spa-Proyecto/issues"
   },
-  "homepage": "https://github.com/MrZhongli/Spa-Proyecto#readme"
+  "homepage": "https://github.com/MrZhongli/Spa-Proyecto#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
 }

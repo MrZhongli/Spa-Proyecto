@@ -17,15 +17,10 @@
 //  	}
 // }
 
-
-
-
-
 @each $k, $v in $miWeight {
 	.font-weight-#{$k}{
 		font-weight:$v;
 	}
-	 
 }
 
 @mixin textoNormal($fontSize){
@@ -36,7 +31,6 @@
 	font-family: 'Quicksand', sans-serif;
 	 list-style: none;
 	 text-decoration: none;
-
 }
 
 @mixin textoNav($fontSize){
@@ -48,3 +42,6 @@
 	 list-style: none;
 	 text-decoration: none;
 }
+
+
+
