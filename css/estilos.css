@@ -1,14 +1,3 @@
-/*bucles*/
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat+Alternates:ital,wght@0,100;0,200;1,200&family=Montserrat:ital,wght@1,600&family=Nunito:ital,wght@0,300;1,200&family=Quicksand:wght@300;400;600&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;1,500&family=Sacramento&display=swap");
-.font-weight-light {
-  font-weight: 300; }
-
-.font-weight-normal {
-  font-weight: 400; }
-
-.font-weight-bold {
-  font-weight: 700; }
-
 /*CSS rules to specify families
 
 font-family: 'Dancing Script', cursive;
@@ -20,6 +9,27 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Sacramento', cursive;
 */
+/*bucles*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat+Alternates:ital,wght@0,100;0,200;1,200&family=Montserrat:ital,wght@1,600&family=Nunito:ital,wght@0,300;1,200&family=Quicksand:wght@300;400;600&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;1,500&family=Sacramento&display=swap");
+.font-weight-light {
+  font-weight: 300; }
+
+.font-weight-normal {
+  font-weight: 400; }
+
+.font-weight-bold {
+  font-weight: 700; }
+
+.fFamily-monterrat {
+  font-family: "Montserrat"; }
+
+.fFamily-nunito {
+  font-family: "Nunito"; }
+
+.fFamily-quicksands {
+  font-family: "Quicksand"; }
+
+/*mixin para proximamente*/
 * {
   margin: 0;
   padding: 0;
@@ -44,11 +54,8 @@ font-family: 'Sacramento', cursive;
 .myTitles div div p, .myTitles div div h5 {
   font-family: 'Dancing Script', cursive; }
 
-.logoName {
-  margin-right: 70px; }
-
 .myTitles {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-size: 1.5rem; }
 
@@ -260,13 +267,7 @@ nav {
       font-size: 15px; } }
 
 .aside {
-  display: grid;
-  margin: auto;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
-  justify-items: center;
-  align-items: center;
   /*Pagina - tratamientos*/
   /*Pagina - promociones*/
   /*Pagina - contacto*/ }
@@ -274,7 +275,9 @@ nav {
     .aside .aside {
       display: flex;
       flex-wrap: wrap;
-      margin: auto; } }
+      margin: auto;
+      justify-content: center;
+      align-items: center; } }
   .aside .partnerContainerImg img {
     border-radius: 50%;
     width: 400px;
@@ -296,12 +299,9 @@ nav {
     .aside .promociones_container .promo {
       margin: auto; }
   .aside .proximamente img {
-    border-radius: 50%;
-    border: 1px solid #000;
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 15px 20px 1px; }
+    width: 100px; }
   .aside .mercadopago {
+    box-shadow: 0 15px 20px 1px;
     width: 50px; }
   .aside .form-contact {
     flex-grow: 1; }
@@ -314,7 +314,7 @@ nav {
     border: 1px solid #dfe1e5;
     padding: 12px;
     outline: none;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50;
     transition-duration: 0.3s; }
     .aside .input-container input:hover {
       box-shadow: 0 1px 6px 0 #20214447; }

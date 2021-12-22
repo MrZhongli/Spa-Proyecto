@@ -2,17 +2,7 @@
 @import "tools";
 @import "productos";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat+Alternates:ital,wght@0,100;0,200;1,200&family=Montserrat:ital,wght@1,600&family=Nunito:ital,wght@0,300;1,200&family=Quicksand:wght@300;400;600&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;1,500&family=Sacramento&display=swap');
-/*CSS rules to specify families
 
-font-family: 'Dancing Script', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Sacramento', cursive;
-*/
 *{
     margin: 0;
     padding: 0;
@@ -40,13 +30,9 @@ font-family: 'Sacramento', cursive;
     font-family: 'Dancing Script', cursive;
 }
 
-.logoName {
-    margin-right: 70px;
-}
-
 
 .myTitles{
-font-family: 'Quicksand', sans-serif;
+font-family: map-get($myFonts, quicksands), sans-serif;
 font-weight: 600;
 font-size: 1.5rem;
 }
@@ -65,7 +51,7 @@ font-size: 1.7rem;
 
 body{
     overflow-x: hidden;
-}
+    }
 
 nav{
     background-color: #ef9fe54a;
@@ -81,8 +67,6 @@ nav{
         border-radius: 50px 50px 50px 50px;
     }
 }
-
-
 
 .nav_logo img{
     width: 80px;
@@ -206,7 +190,7 @@ nav{
 }
 
 .contactanos{
-    background: linear-gradient(90deg, #2ef2f2 10%,#89ffed 100%);
+    background: map-get($color3, primary);
 }
 .section-title{
 margin-bottom: 100px;
@@ -214,7 +198,7 @@ margin-bottom: 100px;
 /*FOOTER*/
 
 .footer{
-    background-color: $bgColor;
+    background-color: map-get($color3, pink);
     width: 100%;
     padding: 50px 0px;
 }
@@ -319,19 +303,15 @@ margin-bottom: 100px;
 }
 
 
-.aside{
-    display: grid;
-    margin: auto;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+.aside{   
     width: 100%;
-    justify-items: center;
-    align-items: center;
     @media only screen and (max-width: $point-md){
         .aside{
             display: flex;
             flex-wrap: wrap;
             margin: auto;
+            justify-content:center;
+            align-items:center;
     }       
 }
 
@@ -373,15 +353,12 @@ margin-bottom: 100px;
 }
 
 
-.proximamente img {
-    border-radius: 50%;
-    border: 1px solid #000;
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 15px 20px 1px;    
+.proximamente img{
+    width: 100px;
 }
 
 .mercadopago{
+    box-shadow: 0 15px 20px 1px;    
     width: 50px;
 }
 /*Pagina - contacto*/
@@ -402,7 +379,7 @@ div .checkBoxContainer{
     border: 1px solid #dfe1e5;
     padding: 12px;
     outline: none;
-    border-radius: 50px 50px 50px 50px ;
+    border-radius: 50px 50px 50px 50 ;
     transition-duration: 0.3s;
     &:hover{
         box-shadow: 0 1px 6px 0 #20214447;

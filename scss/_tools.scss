@@ -19,7 +19,13 @@
 
 @each $k, $v in $miWeight {
 	.font-weight-#{$k}{
-		font-weight:$v;
+		font-weight:$v;	
+	}
+}
+
+@each $a , $b in $myFonts{
+	.fFamily-#{$a}{
+		font-family:$b;
 	}
 }
 
@@ -42,6 +48,9 @@
 	 list-style: none;
 	 text-decoration: none;
 }
+
+/*mixin para proximamente*/
+
 
 
 
