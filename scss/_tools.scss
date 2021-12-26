@@ -49,8 +49,23 @@
 	 text-decoration: none;
 }
 
-/*mixin para proximamente*/
+/*mixin para la clase profesional_widget*/
 
+@mixin boxSize1 ($direction: row){
+	display: flex;
+	flex-direction: $direction;
+	align-items: center;
+    @if $direction == row{
+    	flex-direction:row;
+    }
+    @else{
+    	flex-direction:column;
+    }
+   
+}
 
+/*
+justify-content-center align-items-center list-unstyled d-flex flex-column
+*/
 
 

@@ -14,7 +14,6 @@
   <!--estilos y scripts-->
 	<script src="https://kit.fontawesome.com/7ea23873f4.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/estilos.css">
-	
 </head>
 <body>
   	<!--navBar-->
@@ -98,16 +97,16 @@
       					<div class="p_container">
       						<p class="sub_title_main myTitles">Profesionales</p>
         				</div>
-        					<div class="letraBase">
-        						<p class="myText">Disponemos con personal capacitado en el area de salud y belleza</p>
-        					</div>
-                 <div>
-                  <ul class="profesional_widget justify-content-center align-items-center list-unstyled d-flex flex-column">
-                    <li class=""><img src="https://pbs.twimg.com/profile_images/626046178866671616/Rf7pgxWM_400x400.jpg" alt="Masajistas"></li>
-                    <li class=""><img src="https://joseppons.com/formacion/wp-content/uploads/2019/06/abrir-tu-salon-peluqueria.jpg" alt="Estilistas"></li>
-                    <li><img src="https://www.hola.com/imagenes/belleza/actualidad/2017012691110/manicura-cuidado-unas//0-418-552/manicura-t.jpg" alt="Manicurísta"></li>
-                </ul>
-              </div>
+        				<div class="letraBase">
+        					<p class="myText">Disponemos con personal capacitado en el area de salud y belleza</p>
+        				</div>
+                <div>
+                  <div class="profesional_widget justify-content-center align-items-center list-unstyled d-flex row  ">
+                    <img class="card" src="https://pbs.twimg.com/profile_images/626046178866671616/Rf7pgxWM_400x400.jpg" alt="Masajistas">
+                     <img class="card" src="https://joseppons.com/formacion/wp-content/uploads/2019/06/abrir-tu-salon-peluqueria.jpg" alt="Estilistas">
+                    <img class="card" src="https://www.hola.com/imagenes/belleza/actualidad/2017012691110/manicura-cuidado-unas//0-418-552/manicura-t.jpg" alt="Manicurísta">
+                  </div>
+                </div>
   				</div>
       <!--articulos-->
         <article class="servico-elegido hidden" id="masajes">
@@ -133,9 +132,30 @@
                       <div class="col-lg-4">
                         <a href="contacto.html" class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
                       </div>
-                        <div class="compra_container col-lg-4">
-                          <a  class="btn btn-primary mb-2 boton_compra">Comprar</a>
-                        </div> 
+                         <div class="col-lg-4">
+                          <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Comprar
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -155,7 +175,6 @@
                         <h2 class="titulo_producto myTitles">MASAJE TERAPÉUTICO DE ESPALDA</h2>
                         <p class="product_description ">Este es un masaje ideal para aliviar las contracturas de espalda y liberación de la tensión de los músculos.
                         Las maniobras se realizan específicamente en espalda, trapecios y cervicales con movilizaciones y estiramientos, combinando técnicas manuales especializadas con la aplicación de esferas chinas y cañas de bambú produciendo un efecto relajante.
-
                         Este es un masaje profundo, no se recomienda a personas que sea la primera vez que se realizan un masaje o que no se realicen habitualmente y a personas con contracturas severas.
                         La duración de este masaje es de 50 minutos.
                         </p>
@@ -165,33 +184,86 @@
                               <a class="btn btn-success mb-2 boton_consulta"href="contacto.html">Consultar</a>
                             </div>
                             <div class="col-lg-4">
-                              <a data-send="6" class="btn btn-primary mb-2 boton_compra"
-                                >Comprar</a>
-                            </div>  
+                          <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Comprar
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
                         </div>
                   </div>
                 </div>
               </div>
           </article>
-          <!-- piedras calientes -->
-          <article class="product_item masaje-piedras-calientes"> <div
-                          class="container"> <div class="row"> <div class="col-12 col-md-4
-                          text-right p-5"> <div class="servicio_image-container "> <img class="
-                          col-12 offset-lg-2 w-100"
-                          src="https://mx.hola.com/imagenes/belleza/2017091219428/piedras-calientes-masaje-beneficios/0-83-475/piedras-calientes-masaje-t.jpg"
-                          alt="masaje piedras calientes"> </div> </div> <div class="col-12 col-md-7 p-5 nav_text">
-                          <h2 id="title_7" class="titulo_producto myTitles">MASAJE DE PIEDRAS
-                          CALIENTES</h2> <p class="product_description">Delicadas técnicas
+          <!-- piedras calientes --> 
+          <!-- aqui arreglo el problema del tabulado del gran problema de este codigo -->
+           <article class="product_item masaje-piedras-calientes">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-4 text-right p-5">
+                  <div class="servicio_image-container ">
+                      <img src="https://mx.hola.com/imagenes/belleza/2017091219428/piedras-calientes-masaje-beneficios/0-83-475/piedras-calientes-masaje-t.jpg"
+                          alt="masaje piedras calientes" class="col-12 offset-lg-2 w-100">
+                  </div>
+                </div>
+                <div class="col-12 col-md-7 p-5 nav_text">
+                  <h2 class="titulo_producto myTitles">MASAJE TIBIO DE BAMBÚ</h2>
+                  <p class="product_description ">Delicadas técnicas
                           manuales se combinan con la aplicación de piedras calientes de origen
                           volcánico en diferentes puntos de relajación y la utilización de aceite
                           de almendras dulces dejará la piel suave e hidratada logrando alivianar
                           dolores corporales y produciendo una increíble experiencia de descanso.
-                          La duración de este masaje es de 50 minutos. </p> <p
-                          class="product_price">PRECIO: $ 4020 </p> <div class="row
-                          align-items-end justify-content-start"> <div class="col-lg-4"> <a
-                          class="btn btn-success mb-2 boton_consulta">Consultar</a> </div> <div
-                          class="col-lg-4"> <a  class="btn btn-primary mb-2 boton_compra"
-                          >Comprar</a>
+                          La duración de este masaje es de 50 minutos.
+                  </p>
+                    <p class="product_price">PRECIO: $
+                      2390
+                    </p>
+                  <div class="row align-items-end justify-content-start">
+                    <div class="col-lg-4">
+                      <a class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
+                    </div>
+                      <div class="col-lg-4">
+                          <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Comprar
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -220,7 +292,29 @@
                       <a class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
                     </div>
                       <div class="col-lg-4">
-                        <a class="btn btn-primary mb-2 boton_compra">Comprar</a>
+                          <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Comprar
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -240,8 +334,8 @@
       	                 <div class="logo">
       	                   <img class=" mb-5" src="fotos/logo.png" alt="logo del spa">
       	                 </div>
-      	                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
       	                </div>
+      	                    <p>Esta página web es propiedad y está operado por BeautySpa. Estos Términos establecen los términos y condiciones bajo los cuales tu puedes usar nuestra página web y servicios ofrecidos por nosotros. Esta página web ofrece a los visitantes servicio dermatologicos, consultas, tratamientos estéticos, masajes y bienestar corporal. Al acceder o usar la página web de nuestro servicio, usted aprueba que haya leído, entendido y aceptado estar sujeto a estos Términos</p>
       	            </div>
       	            <div class="box__footer">
       	                <h2>Redes Sociales</h2>

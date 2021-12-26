@@ -1,4 +1,4 @@
-/*CSS rules to specify families
+/*CSS tipografia que utilizo
 
 font-family: 'Dancing Script', cursive;
 font-family: 'Montserrat', sans-serif;
@@ -29,7 +29,10 @@ font-family: 'Sacramento', cursive;
 .fFamily-quicksands {
   font-family: "Quicksand"; }
 
-/*mixin para proximamente*/
+/*mixin para la clase profesional_widget*/
+/*
+justify-content-center align-items-center list-unstyled d-flex flex-column
+*/
 * {
   margin: 0;
   padding: 0;
@@ -61,8 +64,12 @@ font-family: 'Sacramento', cursive;
 
 .myTitlesEspecial {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-  font-size: 1.7rem; }
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-top: 100px; }
+  @media all and (min-width: 768px) {
+    .myTitlesEspecial {
+      font-size: 1.5rem; } }
 
 /*AQUI TERMINA LOS TEXTOS*/
 .navbar-toggler-icon {
@@ -131,9 +138,6 @@ nav {
       .bannerPrincipal p .bannerPrincipal p {
         font-size: 10px; } }
 
-.profesional_widget {
-  margin-bottom: 100px; }
-
 .glass {
   display: flex;
   justify-content: center;
@@ -171,16 +175,26 @@ nav {
       .letraBase p a {
         font-size: 1rem; } }
 
-.service_container .profesional_widget li img {
-  width: 200px;
-  height: 200px;
-  transition-duration: 0.5s; }
-  .service_container .profesional_widget li img:hover {
-    transform: scale(1.1); }
-  @media only screen and (max-width: 576px) {
-    .service_container .profesional_widget li img .service_container .profesional_widget li img {
-      width: 150px;
-      height: 150px; } }
+.profesional_widget {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: row; }
+  .profesional_widget img {
+    width: 200px;
+    height: 200px;
+    transition-duration: 0.5s; }
+    .profesional_widget img:hover {
+      transform: scale(1.1); }
+  @media only screen and (max-width: 768px) {
+    .profesional_widget {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-direction: column; }
+      .profesional_widget li img {
+        width: 150px;
+        height: 150px; } }
 
 .contactanos {
   background: linear-gradient(90deg, #2ef2f2 10%, #89ffed 100%); }
@@ -249,81 +263,158 @@ nav {
   text-align: center; }
 
 /*Pagina - SOBRE NOSOTROS*/
-.sobre_nosotros_container {
+.nosotrosContainer {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: auto; }
+  justify-content: center;
+  align-items: center; }
 
 .Dr {
+  margin: 40px;
   display: flex; }
   .Dr p {
     margin: auto;
     font-size: 25px;
-    box-shadow: 10px 5px 10px 1px; }
+    box-shadow: 0 5px 15px rgba(3, 89, 92, 0.5); }
   @media only screen and (max-width: 768px) {
     .Dr {
       margin: auto;
       font-size: 15px; } }
 
-.aside {
-  width: 100%;
-  /*Pagina - tratamientos*/
-  /*Pagina - promociones*/
-  /*Pagina - contacto*/ }
+.nosotrosContainer {
+  width: 100%; }
   @media only screen and (max-width: 768px) {
-    .aside .aside {
+    .nosotrosContainer .nosotrosContainer {
       display: flex;
       flex-wrap: wrap;
       margin: auto;
       justify-content: center;
       align-items: center; } }
-  .aside .partnerContainerImg img {
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    object-fit: contain; }
-  .aside .partnerContainer {
-    display: inline-block; }
-  .aside .tratamiento_container {
-    grid-area: Dos;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto; }
-    .aside .tratamiento_container ul {
-      list-style: none; }
-  .aside .promociones_container {
-    display: flex;
-    flex-direction: column;
-    margin: auto; }
-    .aside .promociones_container .promo {
-      margin: auto; }
-  .aside .proximamente img {
-    width: 100px; }
-  .aside .mercadopago {
-    box-shadow: 0 15px 20px 1px;
-    width: 50px; }
-  .aside .form-contact {
-    flex-grow: 1; }
-  .aside div .checkBoxContainer {
-    margin-top: 100px;
-    padding: 0; }
-  .aside .input-container input {
+
+.partnerContainerImg img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain; }
+
+.partnerContainerImg .partnerContainer {
+  display: inline-block; }
+
+.cards_container {
+  height: 100%;
+  margin: 100px 0; }
+
+.card_especial {
+  width: 768px;
+  height: 800px;
+  background-color: radial-gradient(90deg, #ef9fe54a, #fff);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 80px;
+  transition: .5s; }
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: radial-gradient(90deg, #ef9fe54a, #fff);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 80px;
+  transition: .5s; }
+  .card:hover {
+    box-shadow: 0 5px 15px rgba(3, 89, 92, 0.5);
+    transform: translateY(-20px); }
+  .card .us_description {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgna(6, 74, 76, 0.18);
+    text-align: center; }
+    .card .us_description h3 {
+      color: #899AFF; }
+  .card .head {
+    height: 125px;
     width: 100%;
-    border-radius: 100px;
-    border: 1px solid #dfe1e5;
-    padding: 12px;
-    outline: none;
-    border-radius: 50px 50px 50px 50;
-    transition-duration: 0.3s; }
-    .aside .input-container input:hover {
-      box-shadow: 0 1px 6px 0 #20214447; }
-    .aside .input-container input:focus {
-      box-shadow: 0 1px 6px 0 #20214447;
-      transform: scale(1.05); }
-    @media only screen and (max-width: 768px) {
-      .aside .input-container input .input-container input {
-        width: 250px; } }
+    position: relative; }
+    .card .head .circle {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: #FF80EF;
+      bottom: 0; }
+    .card .head .img {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 50%;
+      bottom: -30%;
+      left: 25%;
+      transform: translade(-50%); }
+      .card .head .img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover; }
+
+/*Pagina - tratamientos*/
+#treatment_container {
+  margin: 50px; }
+
+.tratamiento_container {
+  grid-area: Dos;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto; }
+  .tratamiento_container ul {
+    list-style: none; }
+
+/*Pagina - promociones*/
+.promociones_container {
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+  .promociones_container .promo {
+    margin: auto; }
+
+.proximamente img {
+  width: 100px; }
+
+.mercadopago {
+  box-shadow: 0 15px 20px 1px;
+  width: 50px; }
+
+/*Pagina - contacto*/
+.formulario {
+  background-image: url(https://inturperu.edu.pe/wp-content/uploads/2019/06/Pasos-para-realizar-un-buen-tratamiento-facial1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+.form-contact {
+  flex-grow: 1; }
+
+div .checkBoxContainer {
+  margin-top: 100px;
+  padding: 0; }
+
+.input-container input {
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #dfe1e5;
+  padding: 12px;
+  outline: none;
+  border-radius: 50px 50px 50px 50;
+  transition-duration: 0.3s; }
+  .input-container input:hover {
+    box-shadow: 0 1px 6px 0 #20214447; }
+  .input-container input:focus {
+    box-shadow: 0 1px 6px 0 #20214447;
+    transform: scale(1.05); }
+  @media only screen and (max-width: 768px) {
+    .input-container input .input-container input {
+      width: 250px; } }
 
 .form-contact form div input {
   font-family: 'Quicksand', sans-serif;
@@ -331,6 +422,12 @@ nav {
 
 .ubicacion_maps {
   display: flex;
-  min-width: 314px; }
+  min-width: 314px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px; }
   .ubicacion_maps iframe {
     flex-grow: 1; }
+  .ubicacion_maps p {
+    margin: 20px; }
