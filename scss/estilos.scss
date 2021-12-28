@@ -48,6 +48,8 @@
 
 /*AQUI TERMINA LOS TEXTOS*/
 
+
+
 .navbar-toggler-icon {
     font-size: 1rem;
 }
@@ -335,7 +337,9 @@ margin-bottom: 100px;
    height: 100%;
    margin: 100px 0;
 }
-
+.WorkingAt{
+    @extend .card_especial
+}
 .card_especial{
     width: 768px;
     height: 800px;
@@ -398,8 +402,6 @@ margin-bottom: 100px;
 
            }
         }
-        
-
     }
 }
 
@@ -423,22 +425,8 @@ margin-bottom: 100px;
 
 
 /*Pagina - promociones*/
-.promociones_container{
-    display: flex;
-    flex-direction: column;
-    margin: auto; 
-    .promo{
-        margin: auto;
-        }
-}
-.proximamente img{
-    width: 100px;
-}
-
-.mercadopago{
-    box-shadow: 0 15px 20px 1px;    
-    width: 50px;
-}
+//en desarrollo
+ 
 /*Pagina - contacto*/
 .formulario{
     background-image: url(https://inturperu.edu.pe/wp-content/uploads/2019/06/Pasos-para-realizar-un-buen-tratamiento-facial1.jpg);
@@ -446,6 +434,7 @@ margin-bottom: 100px;
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 75%;
 
 }
 

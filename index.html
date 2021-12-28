@@ -13,6 +13,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!--estilos y scripts-->
 	<script src="https://kit.fontawesome.com/7ea23873f4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -55,43 +56,45 @@
       </div>
     </nav>
   	  <!-- main -->
-  		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  		<div class="">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner myTitles">
+              <div class="carousel-item active ">
+                <img src="fotos/visiting.jpg" class="d-block w-100 " alt="imagen del carrusel 1">
+                <div class="carousel-caption d-none d-md-block bannerPrincipal">
+                  <p class="glass">Ven y disfruta una experiencia inolvidable</p>     
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="fotos/woman-enjoying-procedureMD.jpg" class="d-block w-100" alt="imagen del carrusel 2">
+                <div class="carousel-caption d-none d-md-block bannerPrincipal">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="fotos/cosmetologist.jpg" class="d-block w-100" alt="imagen del carrusel 3">
+                <div class="carousel-caption d-none d-md-block bannerPrincipal ">
+                  <h5 >Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+         </div>
       </div>
-      <div class="carousel-inner myTitles">
-        <div class="carousel-item active ">
-          <img src="fotos/visiting.jpg" class="d-block w-100 " alt="imagen del carrusel 1">
-          <div class="carousel-caption d-none d-md-block bannerPrincipal">
-          	<p class="glass">Ven y disfruta una experiencia inolvidable</p>		 	
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="fotos/woman-enjoying-procedureMD.jpg" class="d-block w-100" alt="imagen del carrusel 2">
-          <div class="carousel-caption d-none d-md-block bannerPrincipal">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="fotos/cosmetologist.jpg" class="d-block w-100" alt="imagen del carrusel 3">
-          <div class="carousel-caption d-none d-md-block bannerPrincipal ">
-            <h5	>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
     <main class="main_container">
     			<div class="service_container d-flex flex-column justify-content-center align-items-center ">
       					<div class="p_container">
@@ -102,14 +105,14 @@
         				</div>
                 <div>
                   <div class="profesional_widget justify-content-center align-items-center list-unstyled d-flex row  ">
-                    <img class="card" src="https://pbs.twimg.com/profile_images/626046178866671616/Rf7pgxWM_400x400.jpg" alt="Masajistas">
-                     <img class="card" src="https://joseppons.com/formacion/wp-content/uploads/2019/06/abrir-tu-salon-peluqueria.jpg" alt="Estilistas">
-                    <img class="card" src="https://www.hola.com/imagenes/belleza/actualidad/2017012691110/manicura-cuidado-unas//0-418-552/manicura-t.jpg" alt="Manicurísta">
+                    <img class="card" data-aos="flip-left" src="https://pbs.twimg.com/profile_images/626046178866671616/Rf7pgxWM_400x400.jpg" alt="Masajistas">
+                     <img class="card" data-aos="flip-left" src="https://joseppons.com/formacion/wp-content/uploads/2019/06/abrir-tu-salon-peluqueria.jpg" alt="Estilistas">
+                    <img class="card" data-aos="flip-left" src="https://www.hola.com/imagenes/belleza/actualidad/2017012691110/manicura-cuidado-unas//0-418-552/manicura-t.jpg" alt="Manicurísta">
                   </div>
                 </div>
   				</div>
       <!--articulos-->
-        <article class="servico-elegido hidden" id="masajes">
+        <article class="servico-elegido hidden" id="masajes" data-aos="fade-up" >
           <h1 class="section-title col-12 text-center  myTitlesEspecial">MASAJES</h1>
           <!-- masajes con esencias-->
           <div class="product_item masaje-ultra-relajante">
@@ -130,7 +133,7 @@
                     </p>
                     <div class="row align-items-end justify-content-start">
                       <div class="col-lg-4">
-                        <a href="contacto.html" class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
+                        <a href="contacto.html" class="btn btn-success mb-2 boton_consulta">Consultar</a>
                       </div>
                          <div class="col-lg-4">
                           <!-- Button trigger modal -->
@@ -163,7 +166,7 @@
              </div>
           </article>
           <!-- masaje terapeutico -->
-          <article class="product_item masaje-terapeutico">
+          <article class="product_item masaje-terapeutico" data-aos="fade-up">
             <div class="container">
               <div class="row">
                 <div class="col-12 col-md-4 text-right p-5">
@@ -181,7 +184,7 @@
                         <p class="precio_producto">PRECIO: $3200</p>
                         <div class="row align-items-end justify-content-start">
                             <div class="col-lg-4">
-                              <a class="btn btn-success mb-2 boton_consulta"href="contacto.html">Consultar</a>
+                              <a href="contacto.html" class="btn btn-success mb-2 boton_consulta">Consultar</a>
                             </div>
                             <div class="col-lg-4">
                           <!-- Button trigger modal -->
@@ -215,12 +218,12 @@
           </article>
           <!-- piedras calientes --> 
           <!-- aqui arreglo el problema del tabulado del gran problema de este codigo -->
-           <article class="product_item masaje-piedras-calientes">
+           <article class="product_item masaje-piedras-calientes" data-aos="fade-up">
             <div class="container">
               <div class="row">
                 <div class="col-12 col-md-4 text-right p-5">
                   <div class="servicio_image-container ">
-                      <img src="https://mx.hola.com/imagenes/belleza/2017091219428/piedras-calientes-masaje-beneficios/0-83-475/piedras-calientes-masaje-t.jpg"
+                      <img  src="https://mx.hola.com/imagenes/belleza/2017091219428/piedras-calientes-masaje-beneficios/0-83-475/piedras-calientes-masaje-t.jpg"
                           alt="masaje piedras calientes" class="col-12 offset-lg-2 w-100">
                   </div>
                 </div>
@@ -271,7 +274,7 @@
             </div>
           </article>
           <!-- masaje con bambú -->
-          <article class="product_item masaje-tibio-bambu">
+          <article class="product_item masaje-tibio-bambu" data-aos="fade-up">
             <div class="container">
               <div class="row">
                 <div class="col-12 col-md-4 text-right p-5">
@@ -353,7 +356,10 @@
           </div>
           <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  	<!--bootstrap-->
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
