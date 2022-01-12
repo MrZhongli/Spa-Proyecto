@@ -8,7 +8,12 @@
     padding: 0;
     box-sizing: border-box; 
 }
-/*TEXTOS*/
+body{
+    overflow-x: hidden;
+    }
+
+
+/*Modificaciones de TEXTOS*/
 .form-contact label{
     font-family: 'Nunito', sans-serif;
 }
@@ -46,37 +51,47 @@
     }
 }
 
+.letraBase{
+    @include textoNormal(1.2rem)
+    p{
+        @extend .letraBase;  
+        @media all and (max-width:$point-md){
+            font-size: 1rem;
+                }
+        @media all and (max-width:$point-sm){
+            font-size: .9rem;
+                }
+        }
+    p a{
+        font-family: 'Quicksand', sans-serif;
+        @media all and (max-width:$point-md){
+            font-size: 1rem;
+        }
+    }
+}
+
 /*AQUI TERMINA LOS TEXTOS*/
 
-
+//Navbar 
 
 .navbar-toggler-icon {
     font-size: 1rem;
 }
 
-
-body{
-    overflow-x: hidden;
-    }
-
 nav{
-    background-color: #ef9fe54a;
-    border-radius: 0 0 40px 40px;
+    background-color: #ffcbcb;
 }
 
-.nav-item{
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-    z-index: 100;
-    &:hover{
-        background-color: $bgColor;
-        border-radius: 50px 50px 50px 50px;
-    }
+.navbar{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
 }
+
+
 
 .nav_logo img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height:50px;
     display: flex;
     border-radius: 50%;
     margin: 10px 20px;
@@ -84,10 +99,15 @@ nav{
 
 .servicio_image-container img{
     border-radius: 50%;
+    transition-duration:0.5s;
+    &:hover{
+        transform:scale(1.05);
+    }
 }
 /*MAIN INDEX*/
-.p_container > p{
 
+
+.p_container > p{
     font-size: 1.7rem;
     margin-top: 200px;
     @media all and (max-width:$point-md){
@@ -101,15 +121,11 @@ nav{
     margin-top: 100px;  
 }
 
-.carousel-inner{
-    border-radius: 50px 50px 50px 50px;
-}
 
 .bannerPrincipal{
     display: flex;
     background-size: cover;
     background-position: center;
-    border-radius: 50px 50px 50px 50px;
     p{
         font-size: 1.2rem;
         color: #fff;
@@ -130,72 +146,36 @@ nav{
         }
     }
 }
-
-
-
-.glass{
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    background-color:rgba(255 ,255, 255, .05) ;
-    border-radius: 5px;
-    backdrop-filter: blur(5px);
-    border: 2px solid transparent;
-    background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(45,55,60, .3);
-    p{
-        font-size: 1rem;
-    }
-    
-}
-
 /*INDEX SERVICIO*/
+
 .product_item:nth-child(even){
     background-color:#d9d9d9;
 }
 
-.letraBase{
-    @include textoNormal(1.2rem)
+
+.profesional_container{
+    p{
+        @extend .letraBase;
+        color: #ff7c7c;
+        font-weight: 600;
+    }
+    @media screen and (max-width: 768px){
         p{
-        @extend .letraBase; 
-        @media all and (max-width:$point-md){
-            font-size: 1rem;
-        }
-        @media all and (max-width:$point-sm){
-            font-size: .9rem;
-                }
-        }
-    p a{
-        font-family: 'Quicksand', sans-serif;
-        @media all and (max-width:$point-md){
-            font-size: 1rem;
+            display: none;
         }
     }
 }
 
 .profesional_widget{
-    @include boxSize1 ($direction: row)
+    width: 768px;
+    margin: auto;
     img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     transition-duration: 0.5s;
-    &:hover{
-        transform: scale(1.1);
-    }
-
-}
-    @media only screen and (max-width: $point-md){
-     @include boxSize1 ($direction: column)   
-     li img{
-        width: 150px;
-        height: 150px;
-        }
     }
 }
 
-.contactanos{
-    background: map-get($color3, primary);
-}
 .section-title{
 margin-bottom: 100px;
 }
@@ -273,12 +253,6 @@ margin-bottom: 100px;
     }
 }
 
-
-
-        
- 
- 
-
 .boton_compra{
     background-color: #161616;
     text-align: center;
@@ -286,6 +260,29 @@ margin-bottom: 100px;
 
 /*Pagina - SOBRE NOSOTROS*/
 
+.biografiaContainer{
+    margin: 150px;
+    border: 2px solid #999;
+    transition-duration:0.5s;
+    padding: 20px;
+    @media screen and (max-width: $point-md){
+        display: flex;
+        flex-direction: column;
+    }
+    &:hover{
+        box-shadow: 0 5px 15px rgba(3, 89, 92 , 0.5);   
+    }
+}
+
+.biografiaContainer > .letraBase > p:first-child{
+    @extend .font-weight-bold, .fFamily-monterrat;
+}
+
+.fotoBiografia{
+    width: 300px;
+    height: 400px;
+
+}
 .nosotrosContainer{
     display: flex;
     flex-direction: column;
@@ -297,6 +294,7 @@ margin-bottom: 100px;
 .Dr{
     margin: 40px;
     display: flex;
+    flex-direction:row;
     p{
     margin: auto;
     font-size: 25px;
@@ -317,8 +315,7 @@ margin-bottom: 100px;
             flex-wrap: wrap;
             margin: auto;
             justify-content:center;
-            align-items:center;
-        }       
+            align-items:center;        }       
     }
 }
 
@@ -350,8 +347,11 @@ margin-bottom: 100px;
     transition:.5s;
 }
 
-.card{
+.card-containers_container{
+    margin: 100px 0px;
+}
 
+.card-container{
     width: 300px;
     height: 400px;
     background-color: radial-gradient(90deg, #ef9fe54a, $bgColorWhite);
@@ -364,10 +364,12 @@ margin-bottom: 100px;
         transform: translateY(-20px);
     }
     .us_description{
-            height: 200px;
-            padding: 40px 20px 20px 20px;
-            border-bottom: solid 1px rgna( 6, 74, 76, .18);
-            text-align: center;
+        height: 200px;
+        padding: 40px 20px 20px 20px;
+        border-bottom: solid 1px rgna( 6, 74, 76, .18);
+        text-align: center;
+        @extend .letraBase;
+        font-size: 1rem;
             h3{
                 color:#899AFF;
             }
@@ -381,7 +383,7 @@ margin-bottom: 100px;
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background-color: #FF80EF; 
+            background-color: #FFDADA; 
             bottom: 0;
         }
         .img{
@@ -408,8 +410,9 @@ margin-bottom: 100px;
 
 /*Pagina - tratamientos*/
 
-#treatment_container{
-    margin: 50px;
+.product_image{
+width: 300px;
+height: 300px;
 }
 
 .tratamiento_container{
@@ -428,16 +431,37 @@ margin-bottom: 100px;
 //en desarrollo
  
 /*Pagina - contacto*/
-.formulario{
+
+.carrusel_container{
+    height:620px;
+}
+.contact_main_container{
+    min-width:412px;
+}
+
+.message_icon{
+    font-size: 10rem;
+    margin-top: 50px;
+    opacity: 30%;
+  }
+
+.bg_contact{
     background-image: url(https://inturperu.edu.pe/wp-content/uploads/2019/06/Pasos-para-realizar-un-buen-tratamiento-facial1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 75%;
-
 }
 
+.formulario{
+    .letraBase > p{
+    @extend .font-weight-bold;
+    color:#656161;
+    margin-top: 50px;
+    }
+
+}
 .form-contact{
     flex-grow: 1;
 }
@@ -446,7 +470,6 @@ div .checkBoxContainer{
     margin-top: 100px;
     padding: 0;
 }
-
 
 .input-container input{
     width: 100%;

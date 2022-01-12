@@ -3,72 +3,289 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BeautySpa - Promociones</title>
 	 <meta name="description" content="SPA, centro estetico y dertamatología dirigido por la Dr. Lissett Camacho como medico de cabecera. Disfrutas de nuestras promociones. Ven y regalate un momento de paz, relajación y belleza.">
 	<meta name="keywords" content="ESTETICA, SPA, RELAX, BELLEZA, TRATAMIENTOS, MASAJES, CEJAS, PIEL, BIENESTAR, DESCUENTOS">
   	<meta itemprop="image" content="https://i.pinimg.com/736x/58/c2/53/58c253f9dbde6c2ed7f74eedc4ddc7a2.jpg">
+	<title>BeautySpa - Promociones</title>
+	<!-- favicon -->
+  	<link rel="icon" type="image/ico" href="fotos/logo.ico">
 	<!--bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- estilos -->
-	<link rel="stylesheet" href="css/estilos.css">
+	<!--scripts y estilos -->
 	<script src="https://kit.fontawesome.com/7ea23873f4.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<!--navBar-->
+	<div class="main_container" data-aos="fade">
+		<!--navBar-->
 	  	<nav class="navbar navbar-expand-lg navbar-light">
-	      <div class="container-fluid nav_text">
-	          <a class="navbar-brand nav_logo ms-2" href="#"><img src="fotos/logo.png" alt="Logo del spa"></a>
-	          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	            <span class="navbar-toggler-icon "></span>
-	          </button>
-	          <div class="collapse navbar-collapse row ms-0 mt-1" id="navbarSupportedContent">
-	            <ul class="navbar-nav  mb-lg-0 d-flex justify-content-center ">
-	             <div class=" d-flex justify-content-center align-items-center mt-xl-2 me-xl-5 ">
-	              <p>BeautySpa</p>
-	             </div>
-	              <li class="nav-item col-lg-2 text-center ">
-	                <a class=" nav-link  text-center" aria-current="page" href="index.html">Inicio</a>
-	              </li>
-	              <li class="nav-item col-lg-2">
-	                <a class="nav-link text-center" href="sobrenosotros.html">Sobre nosotros</a>
-	              </li>
-	              <li class="nav-item dropdown col-lg-2 ">
-                <a class="nav-link dropdown-toggle text-center" href="tratamiento.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tratamientos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="tratamiento.html">Consultas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="tratamiento.html">Lista de tratamientos</a></li>
-                </ul>
-              </li>
-	              <li class="nav-item col-lg-2 ">
-	                <a class="nav-link active text-center" href="promociones.html">Promociones</a>
-	              </li>
-	               <li class="nav-item col-lg-2">
-	                <a class="nav-link text-center" href="contacto.html">Contacto</a>
-	              </li>
-	            </ul>
-	          </div>
-	      </div>
-	    </nav>
-			<!-- MAIN-->
+	        <div class="container-fluid nav_text">
+	            <a class="navbar-brand nav_logo ms-2" href="index.html"><img src="fotos/logo.png" alt="Logo del spa"></a>
+	            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	              <span class="navbar-toggler-icon "></span>
+	            </button>
+	            <div class="collapse navbar-collapse row ms-0 mt-1" id="navbarSupportedContent">
+	              <ul class="navbar-nav  mb-lg-0 d-flex justify-content-end ">
+	               <div class=" d-flex justify-content-center align-items-center mt-2 me-5 collapse navbar-collapse row ms-0 mt-1" id="navbarSupportedContent">
+	                <p>BeautySpa</p>
+	               </div>
+	                <li class="nav-item col-lg-2 text-center ">
+	                  <a class=" nav-link text-center" aria-current="page" href="index.html">Inicio</a>
+	                </li>
+	                <li class="nav-item col-lg-2">
+	                  <a class="nav-link  text-center" href="sobrenosotros.html">Sobre nosotros</a>
+	                </li>
+	                <li class="nav-item dropdown col-lg-2 ">
+	                  <a class="nav-link dropdown-toggle text-center" href="tratamiento.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	                    Tratamientos
+	                  </a>
+	                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	                    <li><a class="dropdown-item" href="tratamiento.html">Consultas</a></li>
+	                    <li><hr class="dropdown-divider"></li>
+	                    <li><a class="dropdown-item" href="tratamiento.html">Lista de tratamientos</a></li>
+	                  </ul>
+	                </li>
+	                <li class="nav-item col-lg-2 ">
+	                  <a class="nav-link active text-center" href="promociones.html">Promociones</a>
+	                </li>
+	                 <li class="nav-item col-lg-2">
+	                  <a class="nav-link text-center" href="contacto.html">Contacto</a>
+	                </li>
+	              </ul>
+	            </div>
+	        </div>
+     	</nav>
+				<!-- MAIN-->
 				<!-- Working on Image -->
-				<div class="d-flex justify-content-center align-items-centerx">
-					<div class="d-flex card_especial">
-						<div class="d-flex justify-content-center align-items-center">
-							<img src="fotos/workingon.jpg " class="w-75" alt="dibujo animado masaje">
-							<div>
-								<h1>Estamos trabajando por tu bienestar</h1>
-							<p>Página en desarrollo</p>
-							</div>
-						</div>
+					<div>
+						<a href="contacto.html"><img class="banner_promo w-100 h-25" src="fotos/banner.jpg" alt="Promoción del banner"></a>
 					</div>
+					<div class="mt-5 d-flex flex-column justify-content-center align-items-center letraBase">
+						<h2>Promos Full Day</h2>
+						<p>Relájate y recupérate con nuestra variedad de planes y masajes sanadores</p>
+
+					</div>
+				<!-- promo 1 -->
+				<div class="promo_section">
+				<article class=" masaje-tibio-bambu" data-aos="fade-up">
+		            <div class="container">
+		              <div class="row">
+		                <div class="col-12 col-md-4 text-right p-5">
+		                  <div >
+		                      <img src="https://uploads-ssl.webflow.com/5c3713b6542c025f1d94588b/5f1855c8021df376ec7c38f2_7.jpg" class="col-12 offset-lg-2 w-100" alt="Terapia completa de espalda">
+		                  </div>
+		                </div>
+		                <div class="col-12 col-md-7 p-5 nav_text">
+		                  <h2 class="titulo_producto myTitles">Full Day Terapia completa de espalda</h2>
+		                  <p class="product_description ">
+		                  	Incluye: <br>
+								- Masaje descontracturante de espalda <br>
+
+								- Masaje de piedras volcánicas <br>
+
+								- Uso del sauna, baño de vapor, jacuzzi y almuerzo <br>
+		                  </p>
+		                    <p class="product_price">PRECIO: $
+		                      2390
+		                    </p>
+		                  <div class="row align-items-end justify-content-start">
+		                    <div class="col-lg-4">
+		                      <a class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
+		                    </div>
+		                      <div class="col-lg-4">
+		                          <!-- Button trigger modal -->
+		                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+		                          Comprar
+		                        </button>
+		                        <!-- Modal -->
+		                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		                          <div class="modal-dialog">
+		                            <div class="modal-content">
+		                              <div class="modal-header">
+		                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+		                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		                              </div>
+		                              <div class="modal-body">
+		                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+		                              </div>
+		                              <div class="modal-footer">
+		                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+		                              </div>
+		                            </div>
+		                          </div>
+		                        </div>
+		                      </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		        </article>
+		        <!-- promo 2 -->
+		        <article class=" masaje-tibio-bambu" data-aos="fade-up">
+		            <div class="container">
+		              <div class="row">
+		                <div class="col-12 col-md-4 text-right p-5">
+		                  <div >
+		                      <img src="https://uploads-ssl.webflow.com/5c3713b6542c025f1d94588b/5dea486813854766ab998323_3.jpg" class="col-12 offset-lg-2 w-100" alt="Terapia Deluxe">
+		                  </div>
+		                </div>
+		                <div class="col-12 col-md-7 p-5 nav_text">
+		                  <h2 class="titulo_producto myTitles">Full Day Terapia de luxe</h2>
+		                  <p class="product_description ">
+		                  	Incluye: <br>
+								- Exfoliaciòn e hidratación corporal <br>
+								- Masaje capilar <br>
+								- Masaje anti estrés<br>
+								- Facial de spa 
+								- Uso del sauna, baño de vapor, jacuzzi y almuerzo<br>
+		                  </p>
+		                    <p class="product_price">PRECIO: $
+		                      2390
+		                    </p>
+		                  <div class="row align-items-end justify-content-start">
+		                    <div class="col-lg-4">
+		                      <a class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
+		                    </div>
+		                      <div class="col-lg-4">
+		                          <!-- Button trigger modal -->
+		                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+		                          Comprar
+		                        </button>
+		                        <!-- Modal -->
+		                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		                          <div class="modal-dialog">
+		                            <div class="modal-content">
+		                              <div class="modal-header">
+		                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+		                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		                              </div>
+		                              <div class="modal-body">
+		                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+		                              </div>
+		                              <div class="modal-footer">
+		                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+		                              </div>
+		                            </div>
+		                          </div>
+		                        </div>
+		                      </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		        </article>
+		        <!-- promo 3 -->
+		         <article class=" masaje-tibio-bambu" data-aos="fade-up">
+		            <div class="container">
+		              <div class="row">
+		                <div class="col-12 col-md-4 text-right p-5">
+		                  <div >
+		                      <img src="https://uploads-ssl.webflow.com/5c3713b6542c025f1d94588b/5dea48439d586571394eae12_2.jpg" class="col-12 offset-lg-2 w-100" alt="Dia de relajación">
+		                  </div>
+		                </div>
+		                <div class="col-12 col-md-7 p-5 nav_text">
+		                  <h2 class="titulo_producto myTitles">Full day Relajante</h2>
+		                  <p class="product_description ">
+		                  	Incluye: <br>
+								Exfoliación corporal <br>
+								- Envoltura hidratante y masaje capilar <br>
+								- Masaje Anti-estrés <br>
+								- Uso del Sauna, Baño de Vapor, Jacuzzi, Almuerzo. <br>
+		                  </p>
+		                    <p class="product_price">PRECIO: $
+		                      2390
+		                    </p>
+		                  <div class="row align-items-end justify-content-start">
+		                    <div class="col-lg-4">
+		                      <a class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
+		                    </div>
+		                      <div class="col-lg-4">
+		                          <!-- Button trigger modal -->
+		                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+		                          Comprar
+		                        </button>
+		                        <!-- Modal -->
+		                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		                          <div class="modal-dialog">
+		                            <div class="modal-content">
+		                              <div class="modal-header">
+		                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+		                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		                              </div>
+		                              <div class="modal-body">
+		                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+		                              </div>
+		                              <div class="modal-footer">
+		                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+		                              </div>
+		                            </div>
+		                          </div>
+		                        </div>
+		                      </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		        </article>
+		        <!-- promo 4 -->
+		        <article class=" masaje-tibio-bambu" data-aos="fade-up">
+		            <div class="container">
+		              <div class="row">
+		                <div class="col-12 col-md-4 text-right p-5">
+		                  <div >
+		                      <img src="https://uploads-ssl.webflow.com/5c3713b6542c025f1d94588b/5dea4824ff9852dd4be5cf63_1.jpg" class="col-12 offset-lg-2 w-100" alt="Terapia para el bienestar">
+		                  </div>
+		                </div>
+		                <div class="col-12 col-md-7 p-5 nav_text">
+		                  <h2 class="titulo_producto myTitles">Full day Terapia de bienestar</h2>
+		                  <p class="product_description ">
+		                  	Incluye: <br>
+								- Masaje craneo facial <br>
+								- Anti fatiga para piernas cansadas <br>
+								- Masaje Anti-estrés <br>
+								- Uso del Sauna, Baño de Vapor, Jacuzzi, Almuerzo. <br>
+		                  </p>
+		                    <p class="product_price">PRECIO: $
+		                      2390
+		                    </p>
+		                  <div class="row align-items-end justify-content-start">
+		                    <div class="col-lg-4">
+		                      <a class="btn btn-success mb-2 boton_consulta" href="contacto.html">Consultar</a>
+		                    </div>
+		                      <div class="col-lg-4">
+		                          <!-- Button trigger modal -->
+		                        <button type="button" class="btn btn-primary mb-2 boton_compra" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+		                          Comprar
+		                        </button>
+		                        <!-- Modal -->
+		                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		                          <div class="modal-dialog">
+		                            <div class="modal-content">
+		                              <div class="modal-header">
+		                                <h5 class="modal-title" id="staticBackdropLabel">Página en desarrollo</h5>
+		                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		                              </div>
+		                              <div class="modal-body">
+		                                Actualmente nos encontramos trabajando para mejorar tu experiencia de usuario, para cualquier consulta contactanos en <a href="contacto.html">contacto</a>
+		                              </div>
+		                              <div class="modal-footer">
+		                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+		                              </div>
+		                            </div>
+		                          </div>
+		                        </div>
+		                      </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		        </article>
 				</div>
-					
-					<div class="letraBase contactanos">
-						<p>Que esperas, contactanos para agendarte un <a href="contacto.html">turno</a></p>
-					</div>
 				<!-- footer -->
 			<div class="footer">
               	<div class="container__footer">
@@ -93,9 +310,13 @@
     	            	<p>Todos los derechos reservados © 2021 <b>BeautySpa</b></p>
     	       		</div>
        		</div>
-					<!--bootstrap-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-				<!--bootstrap-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>		
+	</div>
+	<!--bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>			
 </body>
 </html>

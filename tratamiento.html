@@ -3,145 +3,151 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BeautySpa - Tratamientos</title>
 	 <meta name="description" content="SPA, centro estetico y dertamatología dirigido por la Dr. Lissett Camacho como medico de cabecera. Conoce nuestros tratamientos. Ven y regalate un momento de paz, relajación y belleza.">
   	<meta name="keywords" content="Estética, SPA, Relax, Belleza, Tratamiento Facial, Masajes">
   	<meta itemprop="image" content="https://i.pinimg.com/736x/58/c2/53/58c253f9dbde6c2ed7f74eedc4ddc7a2.jpg">
+	<title>BeautySpa - Tratamientos</title>
+	<!-- favicon -->
+  	<link rel="icon" type="image/ico" href="fotos/logo.ico">
 	<!--bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- estilos -->
+	<!--scripts y estilos -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://kit.fontawesome.com/7ea23873f4.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<!--navBar-->
-		  	<nav class="navbar navbar-expand-lg navbar-light">
-		      <div class="container-fluid nav_text">
-		          <a class="navbar-brand nav_logo ms-2" href="#"><img src="fotos/logo.png" alt="Logo del spa"></a>
-		          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		            <span class="navbar-toggler-icon "></span>
-		          </button>
-		          <div class="collapse navbar-collapse row ms-0 mt-1" id="navbarSupportedContent">
-		            <ul class="navbar-nav  mb-lg-0 d-flex justify-content-center ">
-		             <div class=" d-flex justify-content-center align-items-center mt-xl-2 me-xl-5 ">
-		              <p>BeautySpa</p>
-		             </div>
-		              <li class="nav-item col-lg-2 text-center ">
-		                <a class=" nav-link  text-center" aria-current="page" href="index.html">Inicio</a>
-		              </li>
-		              <li class="nav-item col-lg-2">
-		                <a class="nav-link text-center" href="sobrenosotros.html">Sobre nosotros</a>
-		              </li>
-		              <li class="nav-item dropdown col-lg-2 ">
-		                <a class="nav-link dropdown-toggle active text-center" href="tratamiento.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		                  Tratamientos
-		                </a>
-		                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-		                  <li><a class="dropdown-item" href="tratamiento.html">Consultas</a></li>
-		                  <li><hr class="dropdown-divider"></li>
-		                  <li><a class="dropdown-item" href="tratamiento.html">Lista de tratamientos</a></li>
-		                </ul>
-		              </li>
-		              <li class="nav-item col-lg-2 ">
-		                <a class="nav-link text-center" href="promociones.html">Promociones</a>
-		              </li>
-		               <li class="nav-item col-lg-2">
-		                <a class="nav-link text-center" href="contacto.html">Contacto</a>
-		              </li>
-		            </ul>
-		          </div>
-		      </div>
-		    </nav>
-				<!-- MAIN-->		
-			<!-- NUEVO CONTENIDO -->
-			<div id="contenido" class="container p-0">
-				<div class="row row-cols-1 m-0 mt-1">
-					<div id="linkGraba" class="col">
-						<div class="row p-2 p-md-4 text-center text-md-start">
-							<div class="col-12 col-md-4">
-								<img class="  h-100 w-100 " data--duration="1.5s" data--delay="0.2s" src="fotos/hialuronico.jpg" alt="Grabación">
-							</div>
-							<div class="col-12 col-md-8">
-								<p class="h4 mt-2 mt-md-0 text-center">ACIDO HIALURONICO</p>
-								<p class="letraBase">Rellenos y skinboosters.
-								El acido hialurónico es un componente natural de la piel que tiene como principal función darle elasticidad, soporte, tersura, brillo. Con el paso de los años, éste va disminuyendo, siendo ésta una de las causas de la aparición de arrugas estáticas, depresiones en los surcos, deshidratación y falta de brillo. Es por ello que se ha convertido en un instrumento excelente para mejorar el aspecto de la piel, tanto cuando se utiliza como relleno, como en mesoterapia y cremas de uso domiciliario. Puede aplicarse para rellenar zonas de la cara que han perdido su volumen y zonas deshidratas y sin brillo ni turgencia.</p>
+	<div class="main_container" data-aos="fade">
+				<nav class="navbar navbar-expand-lg navbar-light">
+	        <div class="container-fluid nav_text">
+	            <a class="navbar-brand nav_logo ms-2" href="index.html"><img src="fotos/logo.png" alt="Logo del spa"></a>
+	            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	              <span class="navbar-toggler-icon "></span>
+	            </button>
+	            <div class="collapse navbar-collapse row ms-0 mt-1" id="navbarSupportedContent">
+	              <ul class="navbar-nav  mb-lg-0 d-flex justify-content-end ">
+	               <div class=" d-flex justify-content-center align-items-center mt-2 me-5 collapse navbar-collapse row ms-0 mt-1" id="navbarSupportedContent">
+	                <p>BeautySpa</p>
+	               </div>
+	                <li class="nav-item col-lg-2 text-center ">
+	                  <a class=" nav-link  text-center" aria-current="page" href="index.html">Inicio</a>
+	                </li>
+	                <li class="nav-item col-lg-2">
+	                  <a class="nav-link  text-center" href="sobrenosotros.html">Sobre nosotros</a>
+	                </li>
+	                <li class="nav-item dropdown col-lg-2 ">
+	                  <a class="nav-link active dropdown-toggle text-center" href="tratamiento.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	                    Tratamientos
+	                  </a>
+	                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	                    <li><a class="dropdown-item" href="tratamiento.html">Consultas</a></li>
+	                    <li><hr class="dropdown-divider"></li>
+	                    <li><a class="dropdown-item" href="tratamiento.html">Lista de tratamientos</a></li>
+	                  </ul>
+	                </li>
+	                <li class="nav-item col-lg-2 ">
+	                  <a class="nav-link text-center" href="promociones.html">Promociones</a>
+	                </li>
+	                 <li class="nav-item col-lg-2">
+	                  <a class="nav-link text-center" href="contacto.html">Contacto</a>
+	                </li>
+	              </ul>
+	            </div>
+	        </div>
+	      </nav>
+				<!-- MAIN-->	
+				<div class="d-flex flex-column justify-content-center align-items-center letraBase p-5 mt-5 mb-5">
+						<h2>Tratamientos</h2>	
+						<p>	Todo lo que necesitas para cuidar y consentir tu cuerpo lo puedes encontrar aquí. Tenemos una amplia variedad de tratamientos faciales y corporales para que salgas renovado.</p>
+					</div>
+					<hr class="container">	
+					<div class="d-flex justify-content-start align-items-center ">
+						<div id="treatment_container" class="container p-0">
+							<div class="row row-cols-1 m-0 mt-1">
+								<div class="col">
+									<div class="row p-2 p-md-4 text-center text-md-start">
+										<div class="product_image col-12 col-md-4 col-sm-12">
+											<img class="h-100 w-100 " src="fotos/hialuronico.jpg" alt="Grabación">
+										</div>
+										<div class="col-12 col-md-8">
+											<p class="h4 mt-2 mt-md-0 text-center">ACIDO HIALURONICO</p>
+											<p class="letraBase">Rellenos y skinboosters.
+											El acido hialurónico es un componente natural de la piel que tiene como principal función darle elasticidad, soporte, tersura, brillo. Con el paso de los años, éste va disminuyendo, siendo ésta una de las causas de la aparición de arrugas estáticas, depresiones en los surcos, deshidratación y falta de brillo. Es por ello que se ha convertido en un instrumento excelente para mejorar el aspecto de la piel, tanto cuando se utiliza como relleno, como en mesoterapia y cremas de uso domiciliario. Puede aplicarse para rellenar zonas de la cara que han perdido su volumen y zonas deshidratas y sin brillo ni turgencia.</p>
+										</div>
+									</div>
+								</div>
+								<div id="treatment_container" class="col">
+									<div class="row p-2 p-md-4 text-center text-md-start">
+										<div class="product_image col-12 col-md-4 col-sm-12">
+											<img class=" h-100 w-100 " src="fotos/chemical-peel-pic-1.jpg" alt="Peeling">
+										</div>
+										<div class="col-12 col-md-8">
+											<p class="h4 mt-2 mt-md-0 text-center">PEELINGS</p>
+											<p class="letraBase">Los peelings químicos son procedimientos destinados a obtener una renovación celular, que puede realizarse a distintos nieles de profundidad, para lograr una piel más homogénea, lisa, brillante, tensa y tersa. <br>
+											Los peelings químicos, generan una descamación cutánea, que varía en intensidad, según el tipo de producto químico que se utilice, el tiempo que se lo deje en contacto con la piel, la concentración del producto y si se lo realiza ocluyendo la zona o no. <br>
+											Es un procedimiento muy útil para mejorar el aspecto de las pieles manchadas, con poros dilatados, envejecidas, con acné o cicatrices. <br>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div id="treatment_container" class="col">
+									<div class="row p-2 p-md-4 text-center text-md-start">
+										<div class="product_image col-12 col-md-4 col-sm-12">
+											<img class="h-100 w-100" src="https://drinescastro.com/wp-content/uploads/2020/08/Plasma-rico-en-plaquetas.jpg" 
+											alt="Plasma rica en plaquetas">
+										</div>
+										<div class="col-12 col-md-8">
+											<p class="h4 mt-2 mt-md-0 text-center">PLASMA RICA EN PLAQUETA</p>
+											<p class="letraBase">Es un tratamiento que se utiliza para devolverle elasticidad, firmeza y turgencia a la piel, mejorando la calidad y el aspecto de la misma.
+											Estimula la síntesis de colágeno por lo que mejora arrugas, surcos, cicatrices, manchas y flacidez, disminuyendo signos de envejecimiento.
+											Se realiza con material biológico propio del paciente, por lo que no genera efectos tóxicos o alérgicos.
+											Se extrae una pequeña muestra de sangre la cual se centrifuga con equipo correspondiente y se separan las plaquetas (procedimiento realizado por hemoterapista).
+											Estas células de la sangre son inyectadas y activadas en la piel liberando factores de crecimiento que son los responsables de los beneficios obtenidos.
+											El tratamiento se realiza con anestesia en crema y puede aplicarse en cara, escote y manos.
+											Además es muy efectivo para alopecia androgenetica aplicándose en cuero cabelludo.</p>
+										</div>
+									</div>
+								</div>
+								<div id="treatment_container" class="col">
+									<div class="row p-2 p-md-4 text-center text-md-start">
+										<div class="product_image col-12 col-md-4 col-sm-12">
+											<img class="h-100 w-100"  src="fotos/botox.jpg" alt="botox">
+										</div>
+										<div class="col-12 col-md-8">
+											<p class="h4 mt-2 mt-md-0 text-center"> BOTOX</p>
+											<p class="letraBase">Procedimiento dirigido a disminuir arrugas faciales, principalmente frente, entrecejo y patas de gallo. También se utiliza para relajar arrugas peribucales, mentón y músculo masetero (mandibula) para bruxismo.</p>
+										</div>
+									</div>
+								</div>
+								<div id="treatment_container" class="col">
+									<div class="row p-2 p-md-4 text-center text-md-start">
+										<div class="product_image col-12 col-md-4 col-sm-12"> 
+											<img class="h-100 w-100" src="fotos/HIFU.jpg" alt="radiofrecuencia de alta intensidad">
+										</div>
+										<div class="col-12 col-md-8">
+											<p class="h4 mt-2 mt-md-0 text-center">HIFU</p>
+											<p class="letraBase">HIFU corporal es una técnica innovadora no quirúrgica que trabaja en las zonas donde se acumula grasa localizada como abdomen, muslos, brazos y rodillas actuando en el tejido adiposo reduciendo la celulitis y modelando el cuerpo. <br>
+											Deep Slim es un procedimiento no invasivo de ultrasonidos focalizados de alta intensidad (HIFU) que actúa en las distintas capas y profundidad de la piel destruyendo la grasa.</p>
+										</div>
+									</div>
+								</div>
+									<div id="treatment_container" class="col">
+										<div class="row p-2 p-md-4 text-center text-md-start">
+											<div class="product_image col-12 col-md-4 col-sm-12">
+												<img class="  h-100 w-100 "  src="fotos/radiofrecuencia.jpg" alt="radiofrecuencia">
+											</div>
+											<div class="col-12 col-md-8">
+												<p class="h4 mt-2 mt-md-0 text-center">RADIOFRECUENCIA</p>
+												<p class="letraBase">La radiofrecuencia consiste en la aplicación de ondas electromagnéticas de alta frecuencia sobre la piel que provoca el calentamiento controlado de las diferentes capas de la dermis, lo que favorece: La formación de nuevo colágeno. El drenaje linfático. La circulación de la piel y el tejido subcutáneo.</p> 
+											</div>
+										</div>
+									</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="row p-2 p-md-4 text-center text-md-start">
-							<div class="col-12 col-md-4">
-								<img class="  h-100 w-100 " data--duration="1.5s" data--delay="0.25s" src="fotos/chemical-peel-pic-1.jpg" alt="Producción">
-							</div>
-							<div class="col-12 col-md-8">
-								<p class="h4 mt-2 mt-md-0 text-center">PEELINGS</p>
-								<p class="letraBase">Los peelings químicos son procedimientos destinados a obtener una renovación celular, que puede realizarse a distintos nieles de profundidad, para lograr una piel más homogénea, lisa, brillante, tensa y tersa. <br>
-								Los peelings químicos, generan una descamación cutánea, que varía en intensidad, según el tipo de producto químico que se utilice, el tiempo que se lo deje en contacto con la piel, la concentración del producto y si se lo realiza ocluyendo la zona o no. <br>
-								Es un procedimiento muy útil para mejorar el aspecto de las pieles manchadas, con poros dilatados, envejecidas, con acné o cicatrices. <br>
-								Es importante tener presente que luego de la realización de este procedimiento, no se exponga la piel al sol y que se utilice protector solar para estar al aire libre, aun en días nublados. <br>
-								También, el paciente debe ser informado que puede reactivarse el herpes labial luego del procedimiento y que la piel podrá estar descamada y enrojecida algunos días, según cada caso en particular. <br>
-								Por otra parte los peelings mecanicos utilizados hoy en día son los conocidos como microdermoabrasión con puntas de diamantes. Estos generan una remoción de capas superficiales de la piel, por medio de puntas que poseen una superficie rugosa. Generalmente, yo lo utilizo siempre como un acompañamiento del peeling químico y no como técnica única.</p>
-							</div>
-						</div>
-					</div>
-					<div id="" class="col">
-						<div class="row p-2 p-md-4 text-center text-md-start">
-							<div class="col-12 col-md-4">
-								<img class="  " src="fotos/plasma.jpg" alt="Plasma rica en plaquetas">
-							</div>
-							<div class="col-12 col-md-8">
-								<p class="h4 mt-2 mt-md-0 text-center">PLASMA RICA EN PLAQUETA</p>
-								<p class="letraBase">Es un tratamiento que se utiliza para devolverle elasticidad, firmeza y turgencia a la piel, mejorando la calidad y el aspecto de la misma.
-								Estimula la síntesis de colágeno por lo que mejora arrugas, surcos, cicatrices, manchas y flacidez, disminuyendo signos de envejecimiento.
-								Se realiza con material biológico propio del paciente, por lo que no genera efectos tóxicos o alérgicos.
-								Se extrae una pequeña muestra de sangre la cual se centrifuga con equipo correspondiente y se separan las plaquetas (procedimiento realizado por hemoterapista).
-								Estas células de la sangre son inyectadas y activadas en la piel liberando factores de crecimiento que son los responsables de los beneficios obtenidos.
-								El tratamiento se realiza con anestesia en crema y puede aplicarse en cara, escote y manos.
-								Además es muy efectivo para alopecia androgenetica aplicándose en cuero cabelludo.</p>
-							</div>
-						</div>
-					</div>
-					<div id="treatment_container" class="col">
-						<div class="row p-2 p-md-4 text-center text-md-start">
-							<div class="col-12 col-md-4">
-								<img class="  h-100 w-100 rounded-3  "  src="fotos/botox.jpg" alt="botox">
-							</div>
-							<div class="col-12 col-md-8">
-								<p class="h4 mt-2 mt-md-0 text-center"> BOTOX</p>
-								<p class="letraBase">Procedimiento dirigido a disminuir arrugas faciales, principalmente frente, entrecejo y patas de gallo. También se utiliza para relajar arrugas peribucales, mentón y músculo masetero (mandibula) para bruxismo.</p>
-							</div>
-						</div>
-					</div>
-					<div id="" class="col">
-						<div class="row p-2 p-md-4 text-center text-md-start">
-							<div class="col-12 col-md-4">
-								<img class="h-100 w-100" src="fotos/HIFU.jpg" alt="radiofrecuencia de alta intensidad">
-							</div>
-							<div class="col-12 col-md-8">
-								<p class="h4 mt-2 mt-md-0 text-center">HIFU</p>
-								<p class="letraBase">HIFU corporal es una técnica innovadora no quirúrgica que trabaja en las zonas donde se acumula grasa localizada como abdomen, muslos, brazos y rodillas actuando en el tejido adiposo reduciendo la celulitis y modelando el cuerpo. <br>
-								Deep Slim es un procedimiento no invasivo de ultrasonidos focalizados de alta intensidad (HIFU) que actúa en las distintas capas y profundidad de la piel destruyendo la grasa.</p>
-							</div>
-						</div>
-					</div>
-					<div id="" class="col">
-						<div class="row p-2 p-md-4 text-center text-md-start">
-							<div class="col-12 col-md-4">
-								<img class="  h-100 w-100 "  src="fotos/radiofrecuencia.jpg" alt="radiofrecuencia">
-							</div>
-							<div class="col-12 col-md-8">
-								<p class="h4 mt-2 mt-md-0 text-center">RADIOFRECUENCIA</p>
-								<p class="letraBase">La radiofrecuencia consiste en la aplicación de ondas electromagnéticas de alta frecuencia sobre la piel que provoca el calentamiento controlado de las diferentes capas de la dermis, lo que favorece: La formación de nuevo colágeno. El drenaje linfático. La circulación de la piel y el tejido subcutáneo.</p> 
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-		<div class="letraBase contactanos container-fluid">
-			<p>Que esperas, contactanos para agendarte un <a href="contacto.html">turno</a></p>
-		</div>
-		<!-- footer -->
-			<div class="footer">
+					</div>	
+			<!-- footer -->
+					<div class="footer">
               	<div class="container__footer">
                   	<div class="box__footer">
       	                <div class="terms nav_text d-flex justify-content-center align-items-center flex-column ">
@@ -164,7 +170,13 @@
     	            	<p>Todos los derechos reservados © 2021 <b>BeautySpa</b></p>
     	       		</div>
        		</div>
-					<!--bootstrap-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</div>
+		<!--bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
